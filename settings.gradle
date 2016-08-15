@@ -1,1 +1,1 @@
-include ':app', ':SlidingMenu', ':tastytoast'
+include ':app', ':SlidingMenu', ':tastytoast', ':tabpagerindictors', ':circleindicator'

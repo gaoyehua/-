@@ -161,4 +161,10 @@ public class ContentFragment extends BaseFragment {
             container.removeView((View) object);
         }
     }
+
+    //获取新闻中心页面
+    public NewsPager getNewsCenterPager(){
+        NewsPager pager =(NewsPager) mPager.get(1);
+        return pager;
+    }
 }

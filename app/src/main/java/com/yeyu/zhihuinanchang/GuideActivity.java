@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.yeyu.zhihuinanchang.Utils.PrefUtls;
+import com.yeyu.zhihuinanchang.Utils.PrefUtils;
 
 import java.util.ArrayList;
 
@@ -104,7 +104,7 @@ public class GuideActivity extends Activity{
             @Override
             public void onClick(View view) {
                 //更新sp，已经不是第一次进入
-                PrefUtls.setBoolean(getApplicationContext(),"is-first-Enter",false);
+                PrefUtils.setBoolean(getApplicationContext(),"is-first-Enter",false);
 
                 //跳转到主界面
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));

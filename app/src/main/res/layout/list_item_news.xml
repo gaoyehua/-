@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:background="#a000"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/image_demo"
+        />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="的开发解决可否额而发明菜单女款女女的贷款服务碰破二等奖发快点快点v登录 发电机房开始懂了"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_alignParentTop="true"
+        android:textColor="#000"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:textColor="#8000"
+        android:text="2016-08-10 22:43:35"
+        />
+
+</RelativeLayout>

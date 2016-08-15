@@ -22,6 +22,7 @@ public class Basepager {
     public TextView tv_title;
     public ImageButton ib_menu;
     public FrameLayout fl_comtent;
+    public ImageButton btnPhoto;//组图切换按
 
     public Basepager(Activity activity){
         mActivity =activity;
@@ -35,6 +36,7 @@ public class Basepager {
         tv_title = (TextView) view.findViewById(R.id.tv_title);
         ib_menu = (ImageButton) view.findViewById(R.id.ib_menu);
         fl_comtent = (FrameLayout) view.findViewById(R.id.fl_content);
+        btnPhoto =(ImageButton) view.findViewById(R.id.btn_photo);
 
         ib_menu.setOnClickListener(new View.OnClickListener() {
             @Override

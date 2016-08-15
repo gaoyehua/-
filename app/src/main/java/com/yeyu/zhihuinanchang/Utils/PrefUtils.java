@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
  * 封装SharedPreferences类，封装成为一个工具类
  * Created by gaoyehua on 2016/8/7.
  */
-public class PrefUtls {
+public class PrefUtils {
 
     public static boolean getBoolean(Context context,String key,boolean defValues){
         SharedPreferences sp =context.getSharedPreferences("config",Context.MODE_PRIVATE);

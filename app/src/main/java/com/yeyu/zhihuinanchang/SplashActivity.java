@@ -1,9 +1,9 @@
 package com.yeyu.zhihuinanchang;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
@@ -11,9 +11,9 @@ import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.widget.RelativeLayout;
 
-import com.yeyu.zhihuinanchang.Utils.PrefUtls;
+import com.yeyu.zhihuinanchang.Utils.PrefUtils;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
 
     private RelativeLayout rl_splash;
 
@@ -56,7 +56,8 @@ public class SplashActivity extends AppCompatActivity {
             public void onAnimationEnd(Animation animation) {
                 //动画结束
                 //进行页面跳转
-                boolean isFirstEnter =PrefUtls.getBoolean(SplashActivity.this,"is-first-Enter",true);
+                boolean isFirstEnter = PrefUtils.getBoolean(SplashActivity.this,
+                        "is-first-Enter",true);
 
                 Intent intent;
                 if(isFirstEnter){
